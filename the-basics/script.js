@@ -72,7 +72,7 @@ let random = [
 ];
 console.log(random[0]) // this will dispay the first item. starts from 0
 
-// type conversion
+// type convertion
 
 let year = "2003"; // String
 console.log(year);
@@ -81,3 +81,55 @@ console.log(year);
 
 let convertedYear = parseInt(year); // ParseInt converts string to number 
 console.log(convertedYear);
+
+
+// convert from number to string
+
+let num = 20; // String
+
+let convertedNumber = num.toString(); // Number to string
+
+console.log(convertedNumber);
+
+
+
+
+var city = "Jessheim";
+console.log(city);
+
+let ageTwo = 20;
+console.log(ageTwo);
+
+const birthYear = 2003;
+console.log(birthYear);
+
+// var greetingTwo = "welcome";
+// console.log(greeingTwo);
+
+
+var quantity = 3;
+console.log(quantity);
+
+
+var isJavaScriptFun = true;
+console.log(isJavaScriptFun);
+
+
+var thisIsUndefined;
+console.log(thisIsUndefined);
+
+
+var emptyValueTwo = null;
+console.log(emptyValueTwo);
+
+var numString = "25";
+console.log(numString);
+
+let convertedNumString = parseInt(numString);
+console.log(convertedNumString);
+
+let numTwo = 50;
+console.log(numTwo);
+
+let convertedNumTwo = numTwo.toString(); // Number to string
+console.log(convertedNumTwo);
