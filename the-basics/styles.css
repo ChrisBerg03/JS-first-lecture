@@ -9,18 +9,10 @@ body {
     align-items: center;
 }
 
-#red, #blue {
+#box {
     width: 200px;
     height: 200px;
-}
-
-#red {
     background-color: red;
-    display: none;
-}
-
-#blue {
-    background-color: blue;
 }
 
 button {

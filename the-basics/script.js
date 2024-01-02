@@ -93,7 +93,6 @@ console.log(convertedNumber);
 
 
 
-
 var city = "Jessheim";
 console.log(city);
 
@@ -111,18 +110,18 @@ var quantity = 3;
 console.log(quantity);
 
 
-var isJavaScriptFun = true;
+let isJavaScriptFun = true;
 console.log(isJavaScriptFun);
 
 
-var thisIsUndefined;
+let thisIsUndefined;
 console.log(thisIsUndefined);
 
 
-var emptyValueTwo = null;
+let emptyValueTwo = null;
 console.log(emptyValueTwo);
 
-var numString = "25";
+let numString = "25";
 console.log(numString);
 
 let convertedNumString = parseInt(numString);
@@ -133,3 +132,17 @@ console.log(numTwo);
 
 let convertedNumTwo = numTwo.toString(); // Number to string
 console.log(convertedNumTwo);
+
+console.log(convertedNumString + numTwo);
+console.log(numString + convertedNumTwo);
+
+
+
+// this will change the box color
+function redBox(){
+    document.getElementById("box").style.backgroundColor = "red" 
+};
+
+function blueBox(){
+    document.getElementById("box").style.backgroundColor = "blue" 
+};
