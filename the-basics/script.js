@@ -18,3 +18,66 @@ console.log(typeof greeting); //to know what type of data
 let isHappy = true;
 console.log(isHappy);
 console.log(typeof isHappy); // displays boolean (yes or no / true or false)
+
+let someVar;
+console.log(typeof someVar); // Outputs undefined because we haven't defined let
+
+let emptyValue = null;
+console.log(typeof emptyValue);
+
+// Object 
+
+let person = {
+    firstName: "Chris",
+    lastName: "Berg",
+    age: "20",
+    sex: "all the time"
+};
+
+console.log(person);
+console.log(typeof person);
+
+let car = {
+    brand: "Volvo",
+    condition: "Used",
+    year: "1992",
+    price: "$10k"
+};
+
+console.log(car);
+console.log(car.brand);
+console.log(car["brand"]);
+console.log(car.condition);
+console.log(car.year);
+
+console.log("i have a " + car.brand + " and it's " + car.condition);
+
+console.log(`i have a ${car.brand} and it's ${car.condition}`);
+
+// Array
+
+let colors = [
+    "Red",
+    "Blue",
+    "Green",
+    "Purple",
+    "pink"
+];
+
+let random = [
+    "bwm", // 0
+    "audi", // 1
+    { name: "Chris", age: 20}, //2
+    ["arm", "leg", "head"] //3
+];
+console.log(random[0]) // this will dispay the first item. starts from 0
+
+// type conversion
+
+let year = "2003"; // String
+console.log(year);
+
+// from string to number
+
+let convertedYear = parseInt(year); // ParseInt converts string to number 
+console.log(convertedYear);

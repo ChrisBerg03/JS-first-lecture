@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#red, #blue {
+    width: 200px;
+    height: 200px;
+}
+
+#red {
+    background-color: red;
+    display: none;
+}
+
+#blue {
+    background-color: blue;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
