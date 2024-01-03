@@ -70,3 +70,68 @@ for(let i = 0; i < myArrayOfNames.length; i++){
 // 0 < 3 (if 0 is less than the total number)
 // i = 0 + 1 = 1 (i++ will add 1 and continue to the next)
 // console.log(myArrayOfNames[1]) (will log the arrayOfNames)
+
+for(let i = 1; i <= 100; i++){
+    console.log(i);
+}; // will count to 100
+
+
+// = +  ++
+
+// addition 
+
+// 10 + 5
+
+let sumAddition = 10 + 5;
+console.log(sumAddition);
+
+let sumSubtraction = 10 - 5;
+console.log(sumSubtraction);
+
+let sumMultiplication = 10 * 5;
+console.log(sumMultiplication);
+
+let sumDivition = 10 / 5;
+console.log(sumDivition);
+
+
+// modulus
+let sumRemain = 10 % 3; // the remaining (1)
+console.log(sumRemain);
+
+// simple operators 
+
+// simple assignment
+let a = 5;
+let b = 10;
+console.log(a+b);
+
+// addition assignment (+=)
+let c = 15;
+c += 5;
+
+
+// subtraction assignment (-=)
+// let c = 15;
+
+// c -= 5;
+
+// c = c - 5;
+
+
+// comparison operators
+
+// equal to (==)
+
+let isEqual = (5 == "5");
+console.log(isEqual); // true
+
+
+// strict equal (===)
+let isStrictEqual = (5 === "5");
+console.log(isStrictEqual);
+
+// not equal (!=)
+
+let notEqual = (5 != 6);
+console.log(notEqual);
