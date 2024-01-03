@@ -135,3 +135,23 @@ console.log(isStrictEqual);
 
 let notEqual = (5 != 6);
 console.log(notEqual);
+
+
+// greaterthan
+
+let isGreaterThan = (10 > 5);
+console.log(isGreaterThan);
+
+// AND  // OR
+// &&   // ||
+
+let andResult = (5 > 3 && 10 > 5);  
+console.log(andResult);
+                
+             // false   // true
+let orResult = (5 > 10 || 20 > 5);
+console.log(orResult);
+
+
+// Not
+!(5 > 10) // true
