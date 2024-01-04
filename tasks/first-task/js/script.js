@@ -8,7 +8,7 @@ console.dir(changeText);
 function addListItem(){
     let ul = document.getElementById("list");
     let li = document.createElement("li");
-    let node = document.createTextNode(`New item ${getRandomNumber(567)} `)
+    let node = document.createTextNode(`New item ${getRandomNumber(201)} `)
     li.appendChild(node);
     let element = document.getElementById("list");
     element.appendChild(li)
