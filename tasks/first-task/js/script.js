@@ -26,6 +26,7 @@ function getRandomNumber(max) {
 
 // addListItem.addEventListener("click", function () {
 //     let someRandomNumber = getRandomInt(220);
+
 //     list.innerHTML += `<li>New Item ${someRandomNumber}</li>`
 //     // list.innerHTML = list.innerHTML +  `<li>New Item</li>`
 // });
