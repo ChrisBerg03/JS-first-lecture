@@ -63,3 +63,35 @@ switch (gradeScore) {
     default: 
         console.log("Not graded yet")
 }
+
+
+// 3. Scope  var, const and let
+
+var nameOne = "Chris";  // global Scope
+
+if(true) {
+    var nameOne ="hi";
+    console.log(nameOne);
+}
+console.log(nameOne);
+
+
+let nameTwo = "Chris";  // function Scope
+if(true) {
+    let nameTwo ="hi";
+    console.log(nameTwo);
+}
+console.log(nameTwo);
+
+
+const GRADETWO = "A"; // can not be changed with const (use let if it need to be changed later)
+
+// GRADETWO = "B";
+// console.log(GRADETWO); // will return an error
+
+
+if(true){
+    const GRAVITY = "100";
+    console.log(GRAVITY);
+}
+// console.log(GRAVITY);  // returns an error because the gravity key is defined by const which is inside functionscope{}.
