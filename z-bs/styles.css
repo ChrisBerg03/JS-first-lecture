@@ -1,0 +1,44 @@
+* {
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container div {
+    border: solid 1px #000;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container div:hover {
+    background-color: #c83;
+    cursor: pointer;
+}
+
+#container-sum {
+    width: 450px;
+    height: 150px;
+    border: solid 1px #000;
+}
+
+#container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
