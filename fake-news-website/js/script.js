@@ -83,6 +83,20 @@ const cats = [
         age: 6
     }
 ];
+const dogs = [
+    {
+        name: "dog1",
+        age: 3
+    },
+    {
+        name: "dog3",
+        age: 5
+    },
+    {
+        name: "dog6",
+        age: 6
+    }
+];
 
 function getName(list) {
     for (let i = 0; i < list.length; i++){
@@ -90,4 +104,4 @@ function getName(list) {
     }
 };
 
-getName(cats);
+getName(dogs);
