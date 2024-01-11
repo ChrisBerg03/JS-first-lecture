@@ -104,4 +104,3 @@ function getName(list) {
     }
 };
 
-getName(dogs);

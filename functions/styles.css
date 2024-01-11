@@ -1,0 +1,69 @@
+* {
+    font-size: 32px;
+}
+
+body {
+    background-color: #555;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    border: 1px solid #000;
+}
+
+button {
+    margin-bottom: 16px;
+}
+
+.colors:hover {
+    cursor: pointer;
+    animation-name: crazy-rainbow;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes crazy-rainbow {
+    0% {
+        background-color: blue;
+    }
+    10% {
+        background-color: yellow;
+    }
+    20% {
+        background-color: red;
+    }
+    30% {
+        background-color: green;
+    }
+    40% {
+        background-color: purple;
+    }
+    50% {
+        background-color: white;
+    }
+    60% {
+        background-color: orange;
+    }
+    70% {
+        background-color: mediumvioletred;
+    }
+    80% {
+        background-color: brown;
+    }
+    90% {
+        background-color: indigo;
+    }
+    100% {
+        background-color: gold;
+    }
+}
