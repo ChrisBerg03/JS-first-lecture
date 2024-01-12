@@ -9,5 +9,5 @@ console.log(getCoffeeParsed);
 const getShoppingList = window.localStorage.getItem("shoppingList");
 console.log(getShoppingList);
 
-const getShoppingListParsed = JSON.parse(getShoppingList);
+const getShoppingListParsed = JSON.parse(gehoppingList);
 console.log(getShoppingListParsed);
