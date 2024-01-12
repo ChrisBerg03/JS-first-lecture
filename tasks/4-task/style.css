@@ -1,0 +1,20 @@
+* {
+    font-size: 32px;
+}
+
+body {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modeBtn {
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #333;
+    color: #fff;
+}
