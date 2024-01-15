@@ -23,9 +23,7 @@ function isEmpty(obj) {
 const isMyObjectEmpty = isEmpty(randomObject);
 console.log(isMyObjectEmpty);
 
-const arr = [
-    1, 10, 6, -91, -50, 100, 63, 12, 56, 97, 47, 41
-]
+const arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90]
 
 arr.sort(function(a, b){return a- b}) // sort in order
 console.log(arr);
