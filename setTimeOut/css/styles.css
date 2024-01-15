@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader {
+    font-size: 3rem;
+    font-weight: 700;
+    color: purple;
+}
+
+.counter {
+    font-size: 5rem;
+    border: 1px solid #000;
+    display: inline;
+}
+
