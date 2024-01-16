@@ -86,3 +86,11 @@ main {
     border-radius: 32px;
     top: 50px;
 }
+
+.hearts:hover {
+    cursor: pointer;
+}
+
+.active-hearts {
+    fill: red;
+} 

@@ -55,8 +55,9 @@ const favorite = document.querySelectorAll(".hearts");
 console.log("favorites", favorite);
 for (let x = 0; x < favorite.length; x++) {
     console.log(favorite[x]);
-    favorite[x].addEventListener("clikced", function () {
-        console.log("i am clicked", favorite[x])
+    favorite[x].addEventListener("click", function () {
+        console.log("i am clicked", favorite[x]);
+        this.classList.toggle("active-hearts");
     })
 }
 
