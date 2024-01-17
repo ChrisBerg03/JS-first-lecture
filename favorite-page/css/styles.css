@@ -87,10 +87,11 @@ main {
     top: 50px;
 }
 
-.hearts:hover {
+.heart:hover {
     cursor: pointer;
 }
 
-.active-hearts {
+.active-heart {
     fill: red;
+    stroke: none;
 } 
