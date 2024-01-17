@@ -11,7 +11,7 @@ for (let i = 0; i < productsData.length; i++) {
     console.log(productsData[i]);
     productContainer.innerHTML += `
     <div class="product">
-    <h3>Crack deluxe</h3>
+    <h3>Crack</h3>
             <img
         class="prodImage"
         alt="hehe"
