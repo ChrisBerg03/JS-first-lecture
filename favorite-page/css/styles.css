@@ -6,6 +6,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .navBar {
@@ -76,13 +77,13 @@ main {
 .product {
     background-color: aqua;
     border-radius: 48px;
-    width: 500px;
+    width: 600px;
     height: 700px;
     margin: 16px;
 }
 
 .product img {
-    width: 400px;
+    width: 500px;
     border-radius: 32px;
     top: 50px;
 }

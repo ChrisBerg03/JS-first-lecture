@@ -4,11 +4,18 @@ import productsData from "./data/products.js";
 
 const productContainer = document.querySelector(".container");
 
-// 2. fill the container with products. The Data element passes the data from html to js so we can save it later in the localstorage.
-let favs = [];
+const mySavedFavs = getFavs ();
 
-for (let i = 0; i < productsData.length; i++) {
-    console.log(productsData[i]);
+
+// 2. fill the container with products. The Data element passes the data from html to js so we can save it later in the localstorage.
+
+for (let i = 0; i < productsData.length; i++) {    
+    let cssClass = "";
+    
+    const doesObjectExisit = mySavedFavs.find(function (favs)
+    {
+        return parseInt(favs.id) === productsData[i].id
+    });
     productContainer.innerHTML += `
     <div class="product">
     <h3>Crack</h3>
@@ -21,7 +28,7 @@ for (let i = 0; i < productsData.length; i++) {
     <h4>${productsData[i].price} Nok</h4>
     
     <span class="like">
-    <svg class="heart"
+    <svg class="heart $cssClass"
     data-name="${productsData[i].name}"
     data-id="${productsData[i].id}"
     data-price="${productsData[i].price}"
@@ -34,11 +41,10 @@ for (let i = 0; i < productsData.length; i++) {
     `;
 }
 
-const mySavedFavs = getFavs ();
+let favs = [];
 
-// select all the hearts
+// select all the heartsa
 const favorite = document.querySelectorAll(".heart");
-console.log("favorites", favorite);
 for (let x = 0; x < favorite.length; x++) {
     favorite[x].addEventListener("click", function () {
         this.classList.toggle("active-heart");
@@ -49,8 +55,12 @@ for (let x = 0; x < favorite.length; x++) {
                  id: this.dataset.id,
                  price: this.dataset.price
              });
-         window.localStorage.setItem("favorite", JSON.stringify(favs));
+             saveFavs(favs);
     });
+}
+
+function saveFavs(favs) {
+    window.localStorage.setItem("favorite", JSON.stringify(favs));
 }
 
 function getFavs () {
@@ -63,5 +73,5 @@ function getFavs () {
         return []
     } else {
         return JSON.parse(savedFavs);
-    }
+    };
 }
