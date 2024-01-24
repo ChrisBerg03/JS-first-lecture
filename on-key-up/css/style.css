@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #666;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body:hover {
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#firstName {
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+}
+
+.submitBTN {
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+}
+
+
+.rainbowThing:hover {
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: blue;
+    }
+    10% {
+        background-color: yellow;
+    }
+    20% {
+        background-color: red;
+    }
+    30% {
+        background-color: green;
+    }
+    40% {
+        background-color: purple;
+    }
+    50% {
+        background-color: white;
+    }
+    60% {
+        background-color: orange;
+    }
+    70% {
+        background-color: mediumvioletred;
+    }
+    80% {
+        background-color: brown;
+    }
+    90% {
+        background-color: indigo;
+    }
+    100% {
+        background-color: gold;
+    }
+}
