@@ -12,6 +12,7 @@ body {
     justify-content: center;
 }
 
-.pet-btn, .btn {
+.pet-btn,
+.btn {
     padding: 16px;
 }
