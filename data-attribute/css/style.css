@@ -55,12 +55,33 @@ main {
 }
 
 .dropDownStyle {
-    background-color: antiquewhite;
+    background-color: lightcyan;
     width: 100px;
     position: absolute;
     left: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropDownStyle ul li{
+    list-style-type: none;
+    letter-spacing: 2px;
+    margin: 0 0 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropDownStyle ul li:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.dropDownStyle ul {
+    padding: 0;
 }
 
 .addColor {
     background-color: rebeccapurple;
 }
+
