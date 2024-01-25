@@ -15,7 +15,7 @@ firstName.onkeyup = function() {
         // // body.classList.add("rainbowThing");
 
     } else {
-        submitBTN.disalbed = true;
+        submitBTN.disabled = true;
         submitBTN.innerHTML = "Your name is too short";
         submitBTN.style.backgroundColor = "red";
         submitBTN.style.color = "white";
