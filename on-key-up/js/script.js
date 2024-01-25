@@ -5,14 +5,14 @@ const body = document.querySelector("body");
 const passwordInput = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
 
-firstName.onkeyup = function(event) {
-    let firstNameValue = event.target.value;
+firstName.onkeyup = function() {
+    let firstNameValue = this.value;
     if(firstNameValue.length >= 5) {
         submitBTN.disabled = false;
         submitBTN.innerHTML = "Good name";
         submitBTN.style.backgroundColor = "green";
         firstNameErrorMessage.innerHTML = "😀"
-        body.classList.add("rainbowThing");
+        // // body.classList.add("rainbowThing");
 
     } else {
         submitBTN.disalbed = true;
