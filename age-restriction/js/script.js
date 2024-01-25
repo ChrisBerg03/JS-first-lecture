@@ -10,7 +10,8 @@ restrictedContentBTN.addEventListener("click", function() {
     if (isAgeOk) {
         restrictedContentContainer.style.display = "none"
     } else {
-        restrictedContentMessage.innerHTML += `You do not meet the age requirement`
+        // restrictedContentMessage.innerHTML += `You do not meet the age requirement`
+        alert("You do not meet the age requirement");
     }
 })
 

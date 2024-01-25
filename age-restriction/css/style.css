@@ -12,6 +12,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .restrictionContainer {
@@ -23,6 +25,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 64px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 .restrictionMessage {
