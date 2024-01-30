@@ -38,3 +38,7 @@ doSomethingDope(function () {
     console.log("i am a callback");
     console.log("i am a callback");
 });
+
+fetch("https://catfact.ninja/facts");
+
+console.log("hello");
