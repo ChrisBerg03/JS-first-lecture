@@ -42,3 +42,22 @@ doSomethingDope(function () {
 fetch("https://catfact.ninja/facts");
 
 console.log("hello");
+
+let changeColor = (document.querySelector("#colorChange").onmouseenter =
+    function () {
+        mouseEnter();
+    });
+
+let changeColor2 = (document.querySelector("#colorChange").onmouseleave =
+    function () {
+        mouseLeave();
+    });
+let body = document.querySelector("body");
+
+function mouseEnter() {
+    body.style.backgroundColor = "red";
+}
+
+function mouseLeave() {
+    body.style.backgroundColor = "#666";
+}
