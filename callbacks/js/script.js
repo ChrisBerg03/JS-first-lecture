@@ -59,5 +59,5 @@ function mouseEnter() {
 }
 
 function mouseLeave() {
-    body.style.backgroundColor = "#666w";
+    body.style.backgroundColor = "#666";
 }
