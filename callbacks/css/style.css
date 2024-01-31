@@ -9,3 +9,8 @@ body {
     background-color: #666;
 }
 
+#colorChange {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+}
