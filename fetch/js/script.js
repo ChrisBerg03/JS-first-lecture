@@ -7,10 +7,11 @@ let todo = fetch(
     }
 )
     .then((httpResponse) => {
-        // console.log(httpResponse);
+        // extract the data using JSON
         return httpResponse.json();
     })
     .then((todoResult) => {
+        // do something with the data. we store it in the todos variable.
         console.log(todoResult);
         todos = todoResult;
     });
