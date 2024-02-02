@@ -4,17 +4,15 @@ import productsData from "./data/products.js";
 
 const productContainer = document.querySelector(".container");
 
-const mySavedFavs = getFavs ();
-
+const mySavedFavs = getFavs();
 
 // 2. fill the container with products. The Data element passes the data from html to js so we can save it later in the localstorage.
 
-for (let i = 0; i < productsData.length; i++) {    
+for (let i = 0; i < productsData.length; i++) {
     let cssClass = "";
-    
-    const doesObjectExisit = mySavedFavs.find(function (favs)
-    {
-        return parseInt(favs.id) === productsData[i].id
+
+    const doesObjectExisit = mySavedFavs.find(function (favs) {
+        return parseInt(favs.id) === productsData[i].id;
     });
     productContainer.innerHTML += `
     <div class="product">
@@ -50,12 +48,12 @@ for (let x = 0; x < favorite.length; x++) {
         this.classList.toggle("active-heart");
         console.log(this.dataset.name);
 
-         favs.push({
-                 name: this.dataset.name,
-                 id: this.dataset.id,
-                 price: this.dataset.price
-             });
-             saveFavs(favs);
+        favs.push({
+            name: this.dataset.name,
+            id: this.dataset.id,
+            price: this.dataset.price,
+        });
+        saveFavs(favs);
     });
 }
 
@@ -63,15 +61,15 @@ function saveFavs(favs) {
     window.localStorage.setItem("favorite", JSON.stringify(favs));
 }
 
-function getFavs () {
+function getFavs() {
     // get the items of the fav from the local storage
     // it will check if the favs is toggled on or off.
     // if it's on it will stay on if refreshed.
 
     const savedFavs = window.localStorage.getItem("favorites");
     if (!savedFavs) {
-        return []
+        return [];
     } else {
         return JSON.parse(savedFavs);
-    };
+    }
 }

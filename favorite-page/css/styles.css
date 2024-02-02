@@ -21,23 +21,22 @@ body {
     padding: 32px;
 }
 
-.navBar nav ul li{
+.navBar nav ul li {
     cursor: pointer;
-    list-style-type: none;   
+    list-style-type: none;
     font-size: 32px;
 }
 
-.navBar nav ul li a{
+.navBar nav ul li a {
     text-decoration: none;
     color: #000;
 }
 
-.navBar nav ul li a:hover{
+.navBar nav ul li a:hover {
     animation-name: rainbow;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
-}   
-
+}
 
 @keyframes rainbow {
     0% {
@@ -95,4 +94,4 @@ main {
 .active-heart {
     fill: red;
     stroke: none;
-} 
+}
