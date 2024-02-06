@@ -1,12 +1,12 @@
-let chair = {
-    color: "grey",
-    height: 100,
-    spin() {
-        console.log("it spins");
-    },
-};
+// let chair = {
+//     color: "grey",
+//     height: 100,
+//     spin() {
+//         console.log("it spins");
+//     },
+// };
 
-chair.spin();
+// chair.spin();
 
 // getting title from API and displaying it on html page.
 const bookListDiv = document.getElementById("book-list");
@@ -33,3 +33,11 @@ function displayBook(book) {
     bookDiv.appendChild(bookTitlePara);
     bookListDiv.appendChild(bookDiv);
 }
+
+// let user = {
+//     fName: "Chris",
+//     lName: "Berg",
+//     age: 20,
+// };
+
+// sessionStorage.setItem("User", JSON.stringify(user));
