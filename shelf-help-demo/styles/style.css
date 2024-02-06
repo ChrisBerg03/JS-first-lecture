@@ -3,5 +3,17 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
+}
+
+#book-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#book-list img {
+    width: 200px;
 }
