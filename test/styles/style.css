@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 16px;
     background-color: #666;
 }
 
@@ -17,9 +19,21 @@ body {
     border: none;
     width: 250px;
     height: 50px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     border-radius: 24px;
+}
+
+#outputField {
+    background-color: antiquewhite;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #inputBTN {
@@ -46,4 +60,37 @@ body {
 #inputBTN:hover {
     background-color: #1e293b;
     color: #fff;
+}
+
+.rainbow {
+    animation-name: rainbow;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    20% {
+        background-color: blue;
+        transform: rotate(72deg);
+    }
+    40% {
+        background-color: green;
+        transform: rotate(144deg);
+    }
+    60% {
+        background-color: purple;
+        transform: rotate(216deg);
+    }
+    80% {
+        background-color: yellow;
+        transform: rotate(288deg);
+    }
+    100% {
+        background-color: orange;
+        transform: rotate(360deg);
+    }
 }
