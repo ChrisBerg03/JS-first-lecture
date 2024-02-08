@@ -3,5 +3,25 @@
 }
 
 body {
+    width: 100dvw;
+    height: 100dvh;
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+#book-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#book-list img {
+    width: 200px;
 }
