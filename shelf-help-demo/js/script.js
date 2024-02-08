@@ -10,6 +10,11 @@
 
 // getting title from API and displaying it on html page.
 const bookListDiv = document.getElementById("book-list");
+const filter = document.getElementById("BTNFilter");
+filter.addEventListener("click", () => {
+    filterByAuthor("Stephen Gundry");
+});
+
 let bookData = [];
 
 fetch("http://localhost:3000/books")
@@ -41,3 +46,17 @@ function displayBook(book) {
 // };
 
 // sessionStorage.setItem("User", JSON.stringify(user));
+
+function filterByAuthor(authorToFilter) {
+    // filter the array
+    const filteredResult = [];
+
+    for (const book of bookData) {
+        if (book.author === authorToFilter) {
+            filteredResult.push(book);
+        }
+    }
+    console.log(filteredResult);
+
+    // update the dom
+}
