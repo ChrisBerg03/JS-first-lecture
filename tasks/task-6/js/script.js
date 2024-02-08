@@ -1,4 +1,5 @@
 const date = new Date();
+console.log(date);
 const body = document.querySelector("body");
 
-body.innerHTML += `<p>${date.getDay()} ${date.getMonth()} ${date.getFullYear()}</p>`;
+body.innerHTML += `<p>${date}</p>`;
