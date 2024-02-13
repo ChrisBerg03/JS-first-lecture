@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #666;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    background-color: #666;
+}
