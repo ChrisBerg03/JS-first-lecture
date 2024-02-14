@@ -9,7 +9,7 @@ for (let i = 0; i < bookArray.length; i += chunk) {
     chunkArray.push(chunks);
 }
 
-for (let i = 0; i < 100; i++) {
-    const addDiv = document.createElement("div");
-    container.appendChild(addDiv);
-}
+// for (let i = 0; i < 50; i++) {
+//     const addDiv = document.createElement("div");
+//     container.appendChild(addDiv);
+// }

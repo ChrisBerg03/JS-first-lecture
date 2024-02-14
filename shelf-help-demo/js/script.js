@@ -66,7 +66,7 @@ function filterByAuthor(authorToFilter) {
     // loop through the filteredList
     for (const book of filteredResult) {
         // render each filteredbook
-        displayBook(filteredResult);
+        displayBook(book);
     }
 }
 
